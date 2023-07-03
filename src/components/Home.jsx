@@ -841,10 +841,10 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <div className="brand mb-20 mt-56 w-full h-[25vh]">
+      <div className="brand mb-0 mt-5 w-full h-fit">
         <p className=" flex  items-center  justify-between w-full">
-          <h3 className=" mt-16 lg:mt-0 lg:pb-2 font-bold">The Best Brand</h3>
-          <h5 className=" mt-16  lg:mt-0  cursor-pointer">+ More brands</h5>
+          <h3 className=" mt-2 lg:mt-0 lg:pb-2 font-bold">The Best Brand</h3>
+          <h5 className=" mt-2  lg:mt-0  cursor-pointer">+ More brands</h5>
         </p>
         <hr className="mb-7 mt-1" />
         <div className=" flex  h-full justify-center flex-wrap md:grid md:grid-cols-3 md:h-fit lg:h-full lg:flex lg:items-center lg:justify-around">
@@ -892,10 +892,10 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <div className="reviews h-[38rem] w-[100%] mr-0  pl-3 pr-3">
+      <div className="reviews  h-[33rem] w-[100%] mr-0  pl-3 pr-3">
         <p className="flex  items-center   justify-between w-full">
-          <h3 className="pb-1 md:font-bold lg:font-bold mt-16">Customer Reviews</h3>
-          <h5 className=" cursor-pointer mt-16">+ Make review</h5>
+          <h3 className="pb-1 md:font-bold lg:font-bold mt-8">Customer Reviews</h3>
+          <h5 className=" cursor-pointer mt-8">+ Make review</h5>
         </p>
         <hr className="mb-0 mt-1" />
         {/* h-full w-full flex items-center */}
@@ -911,7 +911,7 @@ const Home = () => {
               clickable: true,
             }}
             modules={[FreeMode, Pagination]}
-            className= " mySwiper h-[65%] w-[20rem] ml-[10rem] lg:hidden lg:w-full   p-2"
+            className= " mySwiper h-[80%] w-[20rem] ml-[10rem] lg:hidden lg:w-full   p-2"
           >
             {/* h-[90%]  w-[21rem] flex flex-col items-center rounded-xl firstCard bg-[#dceae4] p-10 */}
              <SwiperSlide className="ml-0">
