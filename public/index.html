@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <title>Beauty</title>
+    
+    <style>
+      .swipe1{
+       
+        display: none;
+        background-color: red;
+      }
+        .md__deals{
+          display: block;
+        }
+        .lg__deals{
+          display: none;
+        }
+       
+      @media (max-width:620px){
+        .swipe1{
+          display: flex;
+          
+        }
+        .lg__deals{
+          display: none;
+        }
+        .md__deals{
+          display: none;
+        }
+        .swipe2{
+         
+     display: none;
+        }
+       
+      }
+      .swipe2{
+        display: flex;
+      }
+     
+    
+      @media (max-width:1024px){
+         .lg__deals{
+          display: none;
+         }
+         
+        
+      }
+      @media (min-width:1024px){
+         .lg__deals{
+          display:block;
+         }
+         
+        
+      }
+      @media (max-width:1280px){
+         .xl__deals{
+          display: none;
+         }
+         .lg__deals{
+          display: none;
+         }
+         
+        
+      }
+      @media (min-width:1280px){
+         .xl__deals{
+          display:block;
+         }
+         .lg__deals{
+          display: none;
+         }
+         
+        
+      }
+     
+     
+    
+     
+
+    </style>
+  </head>
+  <body>
+   
+    <div id="root"></div>
+
+
+   
+  </body>
+</html>
