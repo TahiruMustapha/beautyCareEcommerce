@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import {FaUserAlt} from 'react-icons/fa'
 import {BiHide, BiShow} from 'react-icons/bi'
 import {Link} from 'react-router-dom'
-import axios from 'axios'
+//import axios from 'axios'
 
 //import { imgtobase64 } from '../utility/imgbase64'
 const SignUp = () => {
