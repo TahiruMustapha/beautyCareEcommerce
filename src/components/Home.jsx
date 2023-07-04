@@ -35,7 +35,7 @@ const Home = () => {
         }}
         navigation={true}
         modules={[Pagination, Navigation]}
-        className="mySwiper h-[15rem] lg:h-full xl:mt-10  lg:mt-40 md:h-full md:mt-20  w-full mt-[30rem] mb-10"
+        className="mySwiper h-[15rem] lg:h-full xl:mt-10  lg:mt-40 md:h-full md:mt-20  w-full mt-3 mb-10"
       >
         <SwiperSlide className="h-full ">
           <img src={Hslider1} alt="img" className=" cursor-pointer h-full  object-cover  " />
