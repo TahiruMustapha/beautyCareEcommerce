@@ -102,7 +102,7 @@ const Header = () => {
                 <p className='bg-[#80808010] p-1 text-xs  m-1  font-semibold md:p-2 md:font-bold cursor-pointer md:flex-[3] md:m-2 md:text-center'>HAPPY DAYS -Up <br /> to 50% OFF</p>
                 <p className='bg-[#80808010] p-1 text-xs   m-1  font-semibold md:p-2 md:font-bold cursor-pointer md:flex-[3] md:m-2 md:text-center'>WEEKLY DEALS</p>
              </div>
-             <hr  className='w-[95%] ml-auto mr-auto mt-10  sm:w-[90%] sm:m-auto'/>
+             <hr  className='w-[95%] ml-auto mr-auto mt-14  sm:w-[90%] sm:m-auto'/>
              <div className='hidden  md:w-[90%] md:m-auto  md:justify-center   md:grid md:grid-cols-5 lg:grid lg:grid-cols-5 xl:grid xl:grid-cols-10  xl:mt-0    h-fit pb-2 lg:pb-0 lg:w-[90%] lg:ml-auto lg:mr-auto font-extrabold '>
               <Dropdown title='FEATURES'    className=' w-[10rem]   py-3 pl-2 mt-3 lg:mt-0 lg:mr-2 lg:py-3 lg:pl-0 lg:pr-0 '>
               <Dropdown.Item>
