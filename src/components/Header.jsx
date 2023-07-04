@@ -98,9 +98,9 @@ const Header = () => {
                 <p className='bg-[#80808010] p-1 font-medium md:p-2 md:font-bold cursor-pointer md:flex-[3] md:m-2 md:text-center'>WEEKLY DEALS Up to 40% OFF</p>
              </div>
              <div className=' sm:hidden lg:hidden  flex items-center justify-between        mb-4 mt-32 md:mt-2 w-[95%] mr-auto ml-auto'>
-                <small className='bg-[#80808010] p-1 text-xs m-1   font-semibold md:p-2  md:font-bold cursor-pointer md:flex-[3] md:m-2 md:text-center'>BRAND OF THE MONTH</small>
-                <small className='bg-[#80808010] p-1 text-xs  m-1  font-semibold md:p-2 md:font-bold cursor-pointer md:flex-[3] md:m-2 md:text-center'>HAPPY DAYS -Up <br /> to 50% OFF</small>
-                <small className='bg-[#80808010] p-1 text-xs   m-1  font-semibold md:p-2 md:font-bold cursor-pointer md:flex-[3] md:m-2 md:text-center'>WEEKLY DEALS</small>
+                <p className='bg-[#80808010] p-1 text-xs m-1   font-semibold md:p-2  md:font-bold cursor-pointer md:flex-[3] md:m-2 md:text-center'>BRAND OF THE MONTH</p>
+                <p className='bg-[#80808010] p-1 text-xs  m-1  font-semibold md:p-2 md:font-bold cursor-pointer md:flex-[3] md:m-2 md:text-center'>HAPPY DAYS -Up <br /> to 50% OFF</p>
+                <p className='bg-[#80808010] p-1 text-xs   m-1  font-semibold md:p-2 md:font-bold cursor-pointer md:flex-[3] md:m-2 md:text-center'>WEEKLY DEALS</p>
              </div>
              <hr  className='w-[95%] ml-auto mr-auto mt-16  sm:w-[90%] sm:m-auto'/>
              <div className='hidden  md:w-[90%] md:m-auto  md:justify-center   md:grid md:grid-cols-5 lg:grid lg:grid-cols-5 xl:grid xl:grid-cols-10  xl:mt-0    h-fit pb-2 lg:pb-0 lg:w-[90%] lg:ml-auto lg:mr-auto font-extrabold '>
