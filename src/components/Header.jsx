@@ -85,7 +85,7 @@ const Header = () => {
              
             
             </div>
-            <div className=' ease-in-out duration-500 sm:hidden flex  absolute top-10 left-2.5 text-[#444] w-[95%] m-auto items-center justify-between p-3 bg-[#80808071] h-10'>
+            <div className=' ease-in-out duration-500 sm:hidden flex  absolute top-2 left-2.5 text-[#444] w-[95%] m-auto items-center justify-between p-3 bg-[#80808071] h-10'>
             < AiOutlineMenu onClick={handleOpenNav} className='  text-base  cursor-pointer  h-10 '/>
             
             <BsCartFill className=' text-base cursor-pointer'/>
