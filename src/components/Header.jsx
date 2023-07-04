@@ -22,7 +22,7 @@ const Header = () => {
       setShowNav(prev => !prev)
     }
   return (
-    <header className=' w-full h-fit  sm:h-[30vh] pb-2     z-50 bg-white'>
+    <header className=' relative w-full h-fit  sm:h-[30vh] pb-2     z-50 bg-white'>
       {/* DESKTOP */}
              <div className=" hidden topHeader md:flex md:items-center md:px-0  bg-[#80808010] md:w-full md:h-8 ">
               <p className=' hidden md:flex md:w-full  md:text-center md:justify-center  lg:flex lg:w-full  lg:text-center lg:justify-center'> <span className=' m-1'>< BsFillAirplaneFill/></span> Ghana deliveries in 2 to 4 business days <BsFillBagHeartFill className='m-1'/> Free and Fast Shipping for orders above $142.39</p>
@@ -85,7 +85,7 @@ const Header = () => {
              
             
             </div>
-            <div className=' ease-in-out duration-500 sm:hidden flex  absolute top-2 left-2.5 text-[#444] w-[95%] m-auto items-center justify-between p-3 bg-[#80808071] h-10'>
+            <div className=' ease-in-out duration-500 sm:hidden flex  absolute top-0 left-2.5 text-[#444] w-[95%] m-auto items-center justify-between p-3 bg-[#80808071] h-10'>
             < AiOutlineMenu onClick={handleOpenNav} className='  text-base  cursor-pointer  h-10 '/>
             
             <BsCartFill className=' text-base cursor-pointer'/>
