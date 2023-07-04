@@ -85,14 +85,14 @@ const Header = () => {
              
             
             </div>
-            <div className=' ease-in-out duration-500 sm:hidden flex  absolute top-[6rem] left-2.5 text-[#444] w-[95%] m-auto items-center justify-between p-3 bg-[#80808071] h-10'>
+            <div className=' ease-in-out duration-500 sm:hidden flex  absolute top-[5.5rem] left-2.5 text-[#444] w-[95%] m-auto items-center justify-between p-3 bg-[#80808071] h-10'>
             < AiOutlineMenu onClick={handleOpenNav} className='  text-base  cursor-pointer  h-10 '/>
             
             <BsCartFill className=' text-base cursor-pointer'/>
             <HiOutlineUserCircle className=' text-base cursor-pointer'/>
             <FaSearch className=' text-base cursor-pointer'/>
             </div>
-             <div className=' hidden     lg:grid lg:grid-cols-3   mb-4 mt-20 md:mt-2 w-[90%] mr-auto ml-auto'>
+             <div className=' hidden     lg:grid lg:grid-cols-3   mb-4 mt-10 md:mt-2 w-[90%] mr-auto ml-auto'>
                 <p className='bg-[#80808010] p-1 font-medium md:p-2 md:font-bold cursor-pointer md:flex-[3] md:m-2 md:text-center'>BRAND OF THE MONTH - HELLIOCARE 25% 0FF</p>
                 <p className='bg-[#80808010] p-1 font-medium md:p-2 md:font-bold cursor-pointer md:flex-[3] md:m-2 md:text-center'>HAPPY DAYS -Up to 50% OFF</p>
                 <p className='bg-[#80808010] p-1 font-medium md:p-2 md:font-bold cursor-pointer md:flex-[3] md:m-2 md:text-center'>WEEKLY DEALS Up to 40% OFF</p>
