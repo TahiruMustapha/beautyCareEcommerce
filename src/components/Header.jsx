@@ -97,7 +97,7 @@ const Header = () => {
                 <p className='bg-[#80808010] p-1 font-medium md:p-2 md:font-bold cursor-pointer md:flex-[3] md:m-2 md:text-center'>HAPPY DAYS -Up to 50% OFF</p>
                 <p className='bg-[#80808010] p-1 font-medium md:p-2 md:font-bold cursor-pointer md:flex-[3] md:m-2 md:text-center'>WEEKLY DEALS Up to 40% OFF</p>
              </div>
-             <div className=' sm:hidden lg:hidden  flex items-center justify-between        mb-4 mt-40 md:mt-2 w-[95%] mr-auto ml-auto'>
+             <div className=' sm:hidden lg:hidden  flex items-center justify-between        mb-4 mt-[15rem] md:mt-2 w-[95%] mr-auto ml-auto'>
                 <p className='bg-[#80808010] p-1    font-semibold md:p-2  md:font-bold cursor-pointer md:flex-[3] md:m-2 md:text-center'>BRAND OF THE MONTH</p>
                 <p className='bg-[#80808010] p-1  font-semibold md:p-2 md:font-bold cursor-pointer md:flex-[3] md:m-2 md:text-center'>HAPPY DAYS -Up <br /> to 50% OFF</p>
                 <p className='bg-[#80808010] p-1  font-semibold md:p-2 md:font-bold cursor-pointer md:flex-[3] md:m-2 md:text-center'>WEEKLY DEALS</p>
