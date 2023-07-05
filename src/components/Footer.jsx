@@ -5,7 +5,7 @@ import pay from "../country/pay.png";
 import {BsFacebook, BsGoogle, BsInstagram, BsTwitter, BsYoutube} from 'react-icons/bs'
 const Footer = () => {
   return (
-    <div className="mt-2 w-full lg:mt-[48rem]   bg-gray-200 h-fit pb-5 pl-5 pt-5">
+    <div className="mt-2 xl:mt-0 w-full lg:mt-[48rem]   bg-gray-200 h-fit pb-5 pl-5 pt-5">
       <div className=" flex-col w-full  sm:grid sm:grid-cols-2 md:grid md:grid-cols-3 lg:grid grid-cols-4 xl:grid grid-cols-4    ">
         <div className=" w-[16rem] md:mt-4">
           <h3 className=" text-2xl font-semibold mb-4">Newsletter</h3>
