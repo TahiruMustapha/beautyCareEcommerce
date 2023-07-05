@@ -137,7 +137,7 @@ const Shampoo = () => {
         </div>
         <hr className="hidden md:block md:w-full" />
       <div  className="main mt-8 ">
-        <div className="card w-[99%] ml-auto pr-8  xl:pl-14 lg:pl-11 md:pl-6 md:pr-auto   mr-auto xl:grid xl:grid-cols-5  md:grid md:grid-cols-3 grid grid-cols-2  gap-x-9 gap-y-6">
+        <div className="card w-[99%] ml-auto pr-4   xl:pl-14 lg:pl-11 md:pl-6 md:pr-auto   mr-auto xl:grid xl:grid-cols-5  md:grid md:grid-cols-3 grid grid-cols-2  gap-x-9 gap-y-6">
             {
               selectData.map((data,index)=>{
                 return(
