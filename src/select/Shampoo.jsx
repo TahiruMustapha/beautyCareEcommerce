@@ -12,7 +12,7 @@ import { Dropdown } from "rsuite";
 import General from "../components/General";
 const Shampoo = () => {
   return (
-    <div className="w-[95%]  mb-0 ml-auto mr-auto">
+    <div className="w-[95%]  mb-10 ml-auto mr-auto">
       <small className="text-[#8080809f] flex items-center  ">
         {" "}
         <Link className="text-[#000]" to={"/"}>

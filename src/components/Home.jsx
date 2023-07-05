@@ -25,7 +25,7 @@ import {BsBag, BsGlobe2, BsStar} from "react-icons/bs";
 import {Link} from 'react-router-dom'
 const Home = () => {
   return (
-    <div className="w-[90%] ml-auto mr-auto mt-0 mb-20 h-fit ">
+    <div className="w-[90%] ml-auto mr-auto mt-0 mb-[44rem] h-fit ">
       <Swiper
         slidesPerView={1}
         spaceBetween={30}
@@ -1720,7 +1720,7 @@ const Home = () => {
         </div>
 
 
-      <div className="  flex flex-col  justify-center  h-fit w-full  mt-0 sm:grid  sm:grid-cols-1 md:grid  lg:grid lg:grid-cols-3 xl:grid xl:grid-cols-4 xl:w-full lg:w-full lg:mt-10     ">
+      <div className=" flex flex-col  justify-center  h-fit w-full  mt-0 sm:grid  sm:grid-cols-1 md:grid  lg:grid lg:grid-cols-3 xl:grid xl:grid-cols-4 xl:w-full lg:w-full lg:mt-10     ">
         <div className="flex   w-full  justify-center  p-2 mr-3  border-b-2 sm:w-[44rem]  pb-6 lg:w-[18rem] lg:border-r-2 xl:w-[17rem] lg:border-b-0" >
         <div className=" w-32  flex flex-col">
         <BsGlobe2 className="w-full h-10 text-[purple]" />
