@@ -1,5 +1,5 @@
 import React from 'react'
-import { ImStarFull, ImStarHalf } from "react-icons/im";
+//import { ImStarFull, ImStarHalf } from "react-icons/im";
 import { SlChemistry } from "react-icons/sl";
 import {BsBag, BsGlobe2, BsStar} from "react-icons/bs";
 import {Link} from 'react-router-dom'

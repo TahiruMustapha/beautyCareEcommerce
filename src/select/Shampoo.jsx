@@ -85,7 +85,7 @@ const Shampoo = () => {
             {
               selectData.map((data,index)=>{
                 return(
-                  <div className=" box  text-center    w-[11rem] h-[22rem] ">
+                  <div className=" box cursor-pointer text-center    w-[11rem] h-[22rem] ">
                   <img src={data.image} alt="img" />
                   <p className=" font-medium mt-3">{data.name}</p>
                   <p className=" font-medium">{data.desc}</p>
@@ -108,7 +108,7 @@ const Shampoo = () => {
           <span className=" ml-1 mr-0.2 w-8 h-8 flex items-center justify-center bg-[#8080802b]"><MdKeyboardArrowRight/></span>
           
         </div>
-      <hr className="w-full " />
+      <hr className="w-full mb-2 mt-16 " />
        <General/>
     </div>
   );
