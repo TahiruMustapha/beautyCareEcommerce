@@ -122,7 +122,7 @@ const Header = () => {
 
                 <Dropdown title='SKINCARE'    className='w-[10rem]  py-3 pl-2 mt-3 lg:mt-0 lg:mr-2 lg:py-3 lg:pl-0 lg:pr-0 '>
               <Dropdown.Item>
-              <Link to={'shampoo'} className='text-[#444] o-underline ml-0'>Ache</Link>
+              <Link to={'skincare/acne'} className='text-[#444] o-underline ml-0'>Acne</Link>
                 </Dropdown.Item>
               <Dropdown.Item>
               <Link to={'shampoo'} className='text-[#444] no-underline ml-0'>Ampolis</Link>

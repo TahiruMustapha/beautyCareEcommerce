@@ -5,6 +5,7 @@ import Footer from "./components/Footer";
 import {  Route, Routes } from "react-router-dom";
 import About from "./pages/About";
 import Shampoo from "./select/Shampoo";
+import Acne from "./select/Acne";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route  path="/" exact ={true} element={<Home/>}/> 
         <Route  path="/about" exact  element={<About/>}/>  
         <Route  path="/shampoo" exact  element={<Shampoo/>}/>  
+        <Route  path="/skincare/acne" exact  element={<Acne/>}/>  
       </Routes>
         <Footer/>  
         </div>
