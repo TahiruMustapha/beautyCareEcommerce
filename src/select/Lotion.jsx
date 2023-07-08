@@ -12,8 +12,12 @@ import { Dropdown } from "rsuite";
 import General from "../components/General";
 import { AiOutlineMenuUnfold } from "react-icons/ai";
 import lotion1 from './selectImgs/lotion1.jpg'
+import lotion2 from './selectImgs/lotion2.png'
 import body1 from './selectImgs/body1.webp'
-
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/pagination";
+import { Pagination } from "swiper";
 const Lotion = () => {
   return (
     <div>
@@ -32,14 +36,44 @@ const Lotion = () => {
      </div>
    
     <p className="text-xl font-bold mb-0 mt-1">
-      Body Hair
+      Body Lotion
     </p>
     <hr className="w-full mt-1 mb-1" />
     <p className=" mt-0 md:text-lg">
-      Get rid of unwanted body hair by removing or enlighting them with products formulated to remove hair without causing irritation.
+      Keep the body skin healthy and give it some needed love. Chose from our selection of various lotions,norishing creame and rich oils.
     </p>
     
-    <div className="flex flex-col items-center  md:flex md:flex-row md:justify-between md:mt-10 md:items-start  md:w-full ">
+   
+    <Swiper
+        pagination={{
+          dynamicBullets: true,
+        }}
+        modules={[Pagination]}
+        className="mySwiper  h-fit  lg:h-full xl:mt-10  lg:mt-40 md:h-full md:mt-20  w-full mt-0 mb-10"
+      >
+        <SwiperSlide className="h-full ">
+        <div className="flex flex-col items-center  md:flex md:flex-row md:justify-between md:mt-10 md:items-start  md:w-full ">
+      <div className="mt-10 text-[#000]">
+        <h3 className=" md:hidden mb-2 capitalize">Your newly full body skincare routine, simplified.</h3>
+        <h3 className="hidden md:block lg:block xl:hidden md:text-3xl">Your newly full body skincare routine, simplified.</h3>
+        <h3 className="hidden md:hidden lg:hidden xl:block  lg:text-4xl lg:mb-3  xl:text-6xl xl:mb-4">Your newly full body skincare <br /> routine, simplified </h3>
+        <p className="text-[#808080d6] md:hidden font-medium text-base mb-5">
+          Waterless beauty is here to stay! We let you know  what waterless
+          beauty is and also what are the best products.
+        </p>
+        <p className="hidden md:block md:text-xl text-[#808080d6] font-medium text-base mb-5">
+          Shaving ,waxing ,dermaplanning and epilation. <br /> Do you know how to pick the best method <br /> of at home? 
+          hair removal for you?
+        </p>
+        <button className="flex items-center mb-8 bg-[gray] text-white lg:text-xl md:hover:bg-black lg:py-7 md:py-5 md:px-10 lg:px-14 py-3 px-3">
+          READ MORE <MdOutlineKeyboardDoubleArrowRight className="ml-2" />
+        </button>
+      </div>
+      <img src={lotion1} alt="img" className=" md:w-[25rem] md:h-[17] lg:ml-1 lg:w-[32rem] lg:h-[20rem] xl:w-[50rem] xl:h-[28rem]" />
+    </div>
+        </SwiperSlide>
+        <SwiperSlide>
+        <div className="flex flex-col items-center  md:flex md:flex-row md:justify-between md:mt-10 md:items-start  md:w-full ">
       <div className="mt-10 text-[#000]">
         <h3 className=" md:hidden mb-2">Hair Removal At Home: 6 Methods To Try Now.</h3>
         <h3 className="hidden md:block lg:block xl:hidden md:text-3xl">Hair Removal At Home: 6 Methods To Try Now.</h3>
@@ -56,8 +90,11 @@ const Lotion = () => {
           READ MORE <MdOutlineKeyboardDoubleArrowRight className="ml-2" />
         </button>
       </div>
-      <img src={lotion1} alt="img" className=" md:w-[25rem] md:h-[17] lg:ml-1 lg:w-[32rem] lg:h-[20rem] xl:w-[50rem] xl:h-[28rem]" />
+      <img src={lotion2} alt="img" className=" md:w-[25rem] md:h-[17] lg:ml-1 lg:w-[32rem] lg:h-[20rem] xl:w-[50rem] xl:h-[28rem]" />
     </div>
+        </SwiperSlide>
+        
+      </Swiper>
     <div className="filter mt-8 w-[95%] ml-auto mr-auto sm:hidden">
       <hr className="w-full  mb-4" />
         <p className="flex items-center justify-between w-[50%]">
