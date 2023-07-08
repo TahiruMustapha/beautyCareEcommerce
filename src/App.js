@@ -7,6 +7,7 @@ import About from "./pages/About";
 import Shampoo from "./select/Shampoo";
 import Acne from "./select/Acne";
 import Body from "./select/Body";
+import Lotion from "./select/Lotion";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route  path="/shampoo" exact  element={<Shampoo/>}/>  
         <Route  path="/skincare/acne" exact  element={<Acne/>}/>  
         <Route  path="/body/bodyHair" exact  element={<Body/>}/>  
+        <Route  path="body/body-lotion" exact  element={<Lotion/>}/>  
       </Routes>
         <Footer/>  
         </div>

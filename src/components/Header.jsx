@@ -141,7 +141,7 @@ const Header = () => {
               <Link to={'body/bodyHair'} className='text-[#444] no-underline ml-0'>Body Hair</Link>
                 </Dropdown.Item>
               <Dropdown.Item>
-              <Link to={'shampoo'} className='text-[#444] no-underline ml-0'>Body Lotion</Link>
+              <Link to={'body/body-lotion'} className='text-[#444] no-underline ml-0'>Body Lotion</Link>
                 </Dropdown.Item>
           
              
@@ -297,17 +297,13 @@ const Header = () => {
 
                 <Dropdown title='BODY'    className=' w-[10rem]   py-3 pl-2 mt-3 lg:mt-0 lg:mr-2 lg:py-3 lg:pl-0 lg:pr-0 '>
               <Dropdown.Item>
-              <Link to={'shampoo'} className='text-[#444] o-underline ml-0'>Ache</Link>
+              <Link to={'/body/bodyHair'} className='text-[#444] o-underline ml-0'>Body Hair</Link>
                 </Dropdown.Item>
               <Dropdown.Item>
-              <Link to={'shampoo'} className='text-[#444] no-underline ml-0'>Ampolis</Link>
+              <Link to={"body/body-lotion"} className='text-[#444] no-underline ml-0'>Body Lotion </Link>
                 </Dropdown.Item>
-              <Dropdown.Item>
-              <Link to={'shampoo'} className='text-[#444] no-underline ml-0'>Anti-Aging</Link>
-                </Dropdown.Item>
-              <Dropdown.Item>
-              <Link to={'shampoo'} className='text-[#444] no-underline ml-0'>Cleansers</Link>
-                </Dropdown.Item>
+              
+              
              
                 </Dropdown>
               

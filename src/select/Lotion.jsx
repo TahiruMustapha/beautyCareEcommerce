@@ -11,11 +11,13 @@ import {selectData } from '../select/SelectData'
 import { Dropdown } from "rsuite";
 import General from "../components/General";
 import { AiOutlineMenuUnfold } from "react-icons/ai";
+import lotion1 from './selectImgs/lotion1.jpg'
 import body1 from './selectImgs/body1.webp'
-import body2 from './selectImgs/body2.jpg'
-const Body = () => {
+
+const Lotion = () => {
   return (
-    <div className="w-[95%] md:w-[90%] md:mt-0 lg:mt-[0rem]   xl:mt-4  mb-10 ml-auto mr-auto">
+    <div>
+       <div className="w-[95%] md:w-[90%] md:mt-0 lg:mt-[0rem]   xl:mt-4  mb-10 ml-auto mr-auto">
     <small className="text-[#8080809f] flex items-center  ">
       {" "}
       <Link className="text-[#000]" to={"/"}>
@@ -54,7 +56,7 @@ const Body = () => {
           READ MORE <MdOutlineKeyboardDoubleArrowRight className="ml-2" />
         </button>
       </div>
-      <img src={body2} alt="img" className=" md:w-[25rem] md:h-[17] lg:ml-1 lg:w-[32rem] lg:h-[20rem] xl:w-[50rem] xl:h-[28rem]" />
+      <img src={lotion1} alt="img" className=" md:w-[25rem] md:h-[17] lg:ml-1 lg:w-[32rem] lg:h-[20rem] xl:w-[50rem] xl:h-[28rem]" />
     </div>
     <div className="filter mt-8 w-[95%] ml-auto mr-auto sm:hidden">
       <hr className="w-full  mb-4" />
@@ -162,7 +164,8 @@ const Body = () => {
     <hr className="w-full mb-2 mt-16 " />
      <General/>
   </div>
+    </div>
   )
 }
 
-export default Body
+export default Lotion
