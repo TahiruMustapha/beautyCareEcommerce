@@ -12,8 +12,9 @@ import { Dropdown } from "rsuite";
 import General from "../components/General";
 import { AiOutlineMenuUnfold } from "react-icons/ai";
 import body1 from './selectImgs/body1.webp'
-import body2 from './selectImgs/body2.jpg'
-const Body = ({addToCart}) => {
+import spot1 from './selectImgs/spot1.png'
+
+const Darkspot = ({addToCart}) => {
   return (
     <div className="w-[95%] md:w-[90%] md:mt-0 lg:mt-[0rem]   xl:mt-4  mb-10 ml-auto mr-auto">
     <small className="text-[#8080809f] flex items-center  ">
@@ -39,22 +40,21 @@ const Body = ({addToCart}) => {
     
     <div className="flex flex-col items-center  md:flex md:flex-row md:justify-between md:mt-10 md:items-start  md:w-full ">
       <div className="mt-10 text-[#000]">
-        <h3 className=" md:hidden mb-2">Hair Removal At Home: 6 Methods To Try Now.</h3>
-        <h3 className="hidden md:block lg:block xl:hidden md:text-3xl">Hair Removal At Home: 6 Methods To Try Now.</h3>
-        <h3 className="hidden md:hidden lg:hidden xl:block  lg:text-4xl lg:mb-3  xl:text-6xl xl:mb-4">Hair Removal At Home: 6 Methods <br /> To Try Now.</h3>
+        <h3 className=" md:hidden capitalize  mb-2">The best suncreen for dark spot & hyperpicmentation</h3>
+        <h3 className="hidden md:block lg:block xl:hidden md:text-3xl">The best suncreen for dark spot & hyperpicmentation.</h3>
+        <h3 className="hidden md:hidden lg:hidden xl:block  lg:text-4xl lg:mb-3  xl:text-6xl xl:mb-4">The best suncreen for dark spot & hyperpicmentation.</h3>
         <p className="text-[#808080d6] md:hidden font-medium text-base mb-5">
-          Waterless beauty is here to stay! We let you know  what waterless
-          beauty is and also what are the best products.
+         Fine our best suncreens for dark spot and hyperpicmentation, and prevent new spots while minimizing the existing ones.
         </p>
         <p className="hidden md:block md:text-xl text-[#808080d6] font-medium text-base mb-5">
-          Shaving ,waxing ,dermaplanning and epilation. <br /> Do you know how to pick the best method <br /> of at home? 
-          hair removal for you?
+        Fine our best suncreens for dark spot and hyperpicmentation, and prevent new spots while minimizing the existing ones.
+
         </p>
         <button className="flex items-center mb-8 bg-[gray] text-white lg:text-xl md:hover:bg-black lg:py-7 md:py-5 md:px-10 lg:px-14 py-3 px-3">
           READ MORE <MdOutlineKeyboardDoubleArrowRight className="ml-2" />
         </button>
       </div>
-      <img src={body2} alt="img" className=" md:w-[25rem] md:h-[17] lg:ml-1 lg:w-[32rem] lg:h-[20rem] xl:w-[50rem] xl:h-[28rem]" />
+      <img src={spot1} alt="img" className=" md:w-[25rem] md:h-[17] lg:ml-1 lg:w-[32rem] lg:h-[20rem] xl:w-[50rem] xl:h-[28rem]" />
     </div>
     <div className="filter mt-8 w-[95%] ml-auto mr-auto sm:hidden">
       <hr className="w-full  mb-4" />
@@ -165,4 +165,4 @@ const Body = ({addToCart}) => {
   )
 }
 
-export default Body
+export default Darkspot

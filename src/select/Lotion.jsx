@@ -18,7 +18,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import { Pagination } from "swiper";
-const Lotion = () => {
+const Lotion = ({addToCart}) => {
   return (
     <div>
        <div className="w-[95%] md:w-[90%] md:mt-0 lg:mt-[0rem]   xl:mt-4  mb-10 ml-auto mr-auto">
@@ -180,7 +180,7 @@ const Lotion = () => {
                 <p className=" font-medium mt-3 xl:text-base lg:text-base">{data.name}</p>
                 <p className=" font-medium xl:text-base lg:text-base">{data.desc}</p>
                 <p className="font-semibold xl:text-base lg:text-base">Price: {data.price}</p>
-                <button className="bg-[#8080805a] py-3 px-4 mt-2 lg:text-base">{data.button}</button>
+                <button onClick={()=> addToCart(data)} className="bg-[#8080805a] py-3 px-4 mt-2 lg:text-base">{data.button}</button>
             
               </div>
               )

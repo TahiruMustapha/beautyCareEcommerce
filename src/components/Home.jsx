@@ -23,7 +23,16 @@ import { ImStarFull, ImStarHalf } from "react-icons/im";
 import { SlChemistry } from "react-icons/sl";
 import {BsBag, BsGlobe2, BsStar} from "react-icons/bs";
 import {Link} from 'react-router-dom'
-const Home = () => {
+//import { CardDataInfo } from "./CardData";
+
+// import { useState } from "react";
+const Home = ({addToCart}) => {
+//  const [cartVisibility,setCartVisibility] = useState(false);
+//  const [productInCart,setproductInCart] = useState([]);
+  const hanleClick = ()=>{
+console.log();
+  }
+  
   return (
     <div className="w-[90%] ml-auto mr-auto mt-0 mb-[44rem] h-fit ">
       <Swiper
@@ -225,7 +234,7 @@ const Home = () => {
         </div>
       </div>
 
-      <div className=" md__deals   lg:hidden   md:mt-20 weekly__deals md:w-full md:h-fit md:p-5 mb-5 bg-[#f4f4f4] ">
+      <div  className=" md__deals   lg:hidden   md:mt-20 weekly__deals md:w-full md:h-fit md:p-5 mb-5 bg-[#f4f4f4] ">
         <p className="flex items-center justify-between w-full">
           <h3 className="pb-2 font-bold">Weekly Deals</h3>
           <h5 className=" cursor-pointer">Show more</h5>
@@ -244,7 +253,7 @@ const Home = () => {
             className="mySwiper md:h-fit md:w-[100%] md:p-5 "
           >
             <SwiperSlide className="w-[70%]  ">
-              <div className="text-center ">
+              <div key = {1}  className="text-center  "  hanleClick = {hanleClick}>
                 <img src={i5} alt="img" className="w-[100%] md:mb-2" />
                 <p>Nuxe Men 24 Hour Protection</p>
                 <p>Deodorant Roll-on x2</p>
@@ -257,7 +266,7 @@ const Home = () => {
                   </span>
                   <span>$15.42</span>
                 </p>
-                <button class=" bg-slate-950 md:mb-10 hover:bg-slate-700 text-white font-bold py-2 px-4 rounded-full">
+                <button onClick={hanleClick()} class=" bg-slate-950 md:mb-10 hover:bg-slate-700 text-white font-bold py-2 px-4 rounded-full">
                   Add to Cart
                 </button>
               </div>
@@ -579,7 +588,7 @@ const Home = () => {
         </p>
         <hr className="mb-5" />
 
-        <div className="  card w-full  h-[80%] flex items-center ">
+        <div className=" card w-full   h-[80%]  flex flex-col items-center ">
           <Swiper
             slidesPerView={5}
             spaceBetween={30}
@@ -588,9 +597,34 @@ const Home = () => {
               clickable: true,
             }}
             modules={[FreeMode, Pagination]}
-            className="mySwiper h-fit w-[100%] p-5  "
+            className="mySwiper h-[33rem] w-[100%] p-5  "
+           
           >
-            <SwiperSlide className="w-[70%]">
+            <SwiperSlide className="text-center   w-full ">
+              {/* {
+                CardDataInfo.map(product=>{
+                 
+                  return(                                
+                    <div className="">
+                    <img src={product.img} alt="img" className="w-[100%] lg:mb-2" />
+                    <p>{product.name}</p>
+                    <p>{product.category}</p>
+                    <p className="mt-5 mb-3">
+                      <span className=" line-through font-bold text-[gray]">
+                        {product.prevPrice}
+                      </span>{" "}
+                      <span className="text-[green] font-bold ml-1 mr-1">
+                       {product.specialPrice}
+                      </span>
+                      <span>{product.currentPrice}</span>
+                    </p>
+                    <button  class=" bg-slate-950 lg:mb-10 hover:bg-slate-700 text-white font-bold py-2 px-4 rounded-full">
+                     {product.button}
+                    </button>
+                  </div>                                  
+                  )          
+                })
+              } */}
               <div className="text-center ">
                 <img src={i5} alt="img" className="w-[100%] lg:mb-2" />
                 <p>Nuxe Men 24 Hour Protection</p>
@@ -604,12 +638,13 @@ const Home = () => {
                   </span>
                   <span>$15.42</span>
                 </p>
-                <button class=" bg-slate-950 lg:mb-10 hover:bg-slate-700 text-white font-bold py-2 px-4 rounded-full">
+                <button onClick={addToCart}  class=" bg-slate-950 lg:mb-10 hover:bg-slate-700 text-white font-bold py-2 px-4 rounded-full">
                   Add to Cart
                 </button>
               </div>
+              
             </SwiperSlide>
-            <SwiperSlide className="ml-[0] ">
+            <SwiperSlide className=" ">
               <div className="text-center ">
                 <img src={i4} alt="img" className="w-[100%] lg:mb-2" />
                 <p>Nuxe Men 24 Hour Protection</p>
@@ -623,7 +658,7 @@ const Home = () => {
                   </span>
                   <span>$15.42</span>
                 </p>
-                <button class=" bg-slate-950 hover:bg-slate-700 text-white font-bold py-2 px-4 rounded-full">
+                <button onClick={addToCart}  class=" bg-slate-950 hover:bg-slate-700 text-white font-bold py-2 px-4 rounded-full">
                   Add to Cart
                 </button>
               </div>
@@ -642,7 +677,7 @@ const Home = () => {
                   </span>
                   <span>$15.42</span>
                 </p>
-                <button class=" bg-slate-950 hover:bg-slate-700 text-white font-bold py-2 px-4 rounded-full">
+                <button onClick={addToCart} class=" bg-slate-950 hover:bg-slate-700 text-white font-bold py-2 px-4 rounded-full">
                   Add to Cart
                 </button>
               </div>
@@ -661,7 +696,7 @@ const Home = () => {
                   </span>
                   <span>$15.42</span>
                 </p>
-                <button class=" bg-slate-950 hover:bg-slate-700 text-white font-bold py-2 px-4 rounded-full">
+                <button onClick={addToCart} class=" bg-slate-950 hover:bg-slate-700 text-white font-bold py-2 px-4 rounded-full">
                   Add to Cart
                 </button>
               </div>
@@ -680,7 +715,7 @@ const Home = () => {
                   </span>
                   <span>$15.42</span>
                 </p>
-                <button class=" bg-slate-950 hover:bg-slate-700 text-white font-bold py-2 px-4 rounded-full">
+                <button onClick={addToCart} class=" bg-slate-950 hover:bg-slate-700 text-white font-bold py-2 px-4 rounded-full">
                   Add to Cart
                 </button>
               </div>
@@ -699,7 +734,7 @@ const Home = () => {
                   </span>
                   <span>$15.42</span>
                 </p>
-                <button class=" bg-slate-950 hover:bg-slate-700 text-white font-bold py-2 px-4 rounded-full">
+                <button onClick={addToCart} class=" bg-slate-950 hover:bg-slate-700 text-white font-bold py-2 px-4 rounded-full">
                   Add to Cart
                 </button>
               </div>
@@ -718,12 +753,12 @@ const Home = () => {
                   </span>
                   <span>$15.42</span>
                 </p>
-                <button class=" bg-slate-950 hover:bg-slate-700 text-white font-bold py-2 px-4 rounded-full">
+                <button onClick={addToCart} class=" bg-slate-950 hover:bg-slate-700 text-white font-bold py-2 px-4 rounded-full">
                   Add to Cart
                 </button>
               </div>
             </SwiperSlide>
-            <SwiperSlide className="">
+            <SwiperSlide >
               <div className="text-center ">
                 <img src={i4} alt="img" className="w-[100%] lg:mb-2" />
                 <p>Nuxe Men 24 Hour Protection</p>
@@ -737,7 +772,7 @@ const Home = () => {
                   </span>
                   <span>$15.42</span>
                 </p>
-                <button class=" bg-slate-950 hover:bg-slate-700 text-white font-bold py-2 px-4 rounded-full">
+                <button onClick={addToCart} class=" bg-slate-950 hover:bg-slate-700 text-white font-bold py-2 px-4 rounded-full">
                   Add to Cart
                 </button>
               </div>

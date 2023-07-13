@@ -11,8 +11,11 @@ import "rsuite/dist/rsuite.min.css";
 import {selectData } from '../select/SelectData'
 import { Dropdown } from "rsuite";
 import General from "../components/General";
+//import { useState } from "react";
 import { AiOutlineMenuUnfold } from "react-icons/ai";
-const Shampoo = () => {
+const Shampoo = ({addToCart}) => {
+
+ 
   return (
     <div className="w-[95%] md:w-[90%] md:mt-0 lg:mt-[0rem]   xl:mt-4  mb-10 ml-auto mr-auto">
       <small className="text-[#8080809f] flex items-center  ">
@@ -145,8 +148,8 @@ const Shampoo = () => {
                   <img src={data.image} alt="img" className="md:w-full lg:w-full xl:w-full"/>
                   <p className=" font-medium mt-3 xl:text-base lg:text-base">{data.name}</p>
                   <p className=" font-medium xl:text-base lg:text-base">{data.desc}</p>
-                  <p className="font-semibold xl:text-base lg:text-base">Price: {data.price}</p>
-                  <button className="bg-[#8080805a] py-3 px-4 mt-2 lg:text-base">{data.button}</button>
+                  <p className="font-semibold xl:text-base lg:text-base">Price: ${data.price}</p>
+                  <button onClick={()=> addToCart(data)} className="bg-[#8080805a] py-3 px-4 mt-2 lg:text-base">{data.button}</button>
               
                 </div>
                 )

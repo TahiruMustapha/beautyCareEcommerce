@@ -1,10 +1,10 @@
-import React from "react";
+import React from 'react'
 import { MdOutlineKeyboardDoubleArrowRight } from "react-icons/md";
 import { Link } from "react-router-dom";
-import skin1 from "./selectImgs/skin1.jpg";
-import skin2 from "./selectImgs/skin2.jpg";
-import skin3 from "./selectImgs/skin3.webp";
-import skin4 from "./selectImgs/skin4.webp";
+import face1 from "./selectImgs/face1.webp";
+import face2 from "./selectImgs/face2.webp";
+import face3 from "./selectImgs/face3webp.webp";
+import spot1 from "./selectImgs/spot1.png";
 import { IoMdArrowDropright } from "react-icons/io";
 import { RiFilter3Fill } from "react-icons/ri";
 import { FaArrowDown, FaArrowUp } from "react-icons/fa";
@@ -19,7 +19,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import { Pagination } from "swiper";
-const Acne = ({addToCart}) => {
+const FaceSuncreen = ({addToCart}) => {
   return (
     <div className="w-[95%] md:w-[90%] md:mt-0 lg:mt-[0rem]   xl:mt-4  mb-10 ml-auto mr-auto">
       <small className="text-[#8080809f] flex items-center  ">
@@ -27,13 +27,13 @@ const Acne = ({addToCart}) => {
         <Link className="text-[#000]" to={"/"}>
           Home{" "}
         </Link>{" "}
-        <MdOutlineKeyboardDoubleArrowRight className="m-1" /> Skincare{" "}
-        <MdOutlineKeyboardDoubleArrowRight className="m-1" /> Acne
+        <MdOutlineKeyboardDoubleArrowRight className="m-1" /> Suncreen{" "}
+        <MdOutlineKeyboardDoubleArrowRight className="m-1" /> Face Suncreen
       </small>
-      <p className="text-xl font-bold mb-0 mt-1">Acne</p>
+      <p className="text-xl font-bold mb-0 mt-1">Face Suncreen</p>
       <hr className="w-full mt-1 mb-1" />
       <p className=" mt-0 mb-0 md:text-lg">
-        Fine an extensive selection of acne treatments spesificallt designed to reduce blemishes and excess sebum as well as to help balance the skin.
+        Fine a wide range of  face suncreens and tinted formular with SPF to protect delicate of the face from agrresion of sun exposure and sun variation.
       </p>
      
 
@@ -47,14 +47,14 @@ const Acne = ({addToCart}) => {
         <SwiperSlide className="h-full ">
           <div className="flex flex-col items-center  md:flex md:flex-row md:justify-between md:mt-10 md:items-start  md:w-full ">
             <div className="mt-10 text-[#000]">
-              <h3 className=" md:hidden mb-2">
-                Best Acne Product For Sensitive Skin.
+              <h3 className=" md:hidden mb-2 capitalize">
+                The best suncreen sticks to top up your sun protection
               </h3>
-              <h3 className="hidden md:block lg:block xl:hidden md:text-3xl">
-                Best Acne Product For Sensitive Skin.
+              <h3 className="hidden md:block lg:block capitalize xl:hidden md:text-3xl">
+              The best suncreen sticks to top up your sun protection
               </h3>
-              <h3 className="hidden md:hidden lg:hidden xl:block  lg:text-4xl lg:mb-3  xl:text-6xl xl:mb-4">
-                Best Acne Product For Sensitive <br /> Skin.
+              <h3 className="hidden md:hidden capitalize lg:hidden xl:block  lg:text-4xl lg:mb-3  xl:text-6xl xl:mb-4">
+              The best suncreen sticks to top <br /> up your sun protection. 
               </h3>
               <p className="text-[#808080d6] md:hidden font-medium text-base mb-5">
                 The best acne products for sensitive skin are now here, gathered
@@ -69,7 +69,7 @@ const Acne = ({addToCart}) => {
               </button>
             </div>
             <img
-              src={skin1}
+              src={face1}
               alt="img"
               className=" w-full h-[15rem] object-cover md:w-[25rem] md:h-[17] lg:ml-1 lg:w-[32rem] lg:h-[20rem] xl:w-[50rem] xl:h-[28rem]"
             />
@@ -78,14 +78,16 @@ const Acne = ({addToCart}) => {
         <SwiperSlide>
           <div className="flex flex-col items-center  md:flex md:flex-row md:justify-between md:mt-10 md:items-start  md:w-full ">
             <div className="mt-10 text-[#000]">
-              <h3 className=" md:hidden mb-2">
-                Top 7 Affordable Acne Products Under $20.
+              <h3 className="  md:hidden mb-2 capitalize">
+               The 10 best hydrating sunscreen for dry skin
               </h3>
-              <h3 className="hidden md:block lg:block xl:hidden md:text-3xl">
-                Best Acne Product For Sensitive Skin.
+              <h3 className="hidden md:block capitalize lg:block xl:hidden md:text-3xl">
+               The 10 best hydrating  sunscreen for dry skin
+           
               </h3>
-              <h3 className="hidden md:hidden lg:hidden xl:block  lg:text-4xl lg:mb-3  xl:text-6xl xl:mb-4">
-                Best Acne Product For Sensitive <br /> Skin.
+              <h3 className="hidden capitalize md:hidden lg:hidden xl:block  lg:text-4xl lg:mb-3  xl:text-6xl xl:mb-4">
+              The 10 best hydrating  <br /> sunscreen for dry skin
+ 
               </h3>
               <p className="text-[#808080d6] md:hidden font-medium text-base mb-5">
                 Discover affordable acne products that actually work under $20
@@ -100,7 +102,7 @@ const Acne = ({addToCart}) => {
               </button>
             </div>
             <img
-              src={skin2}
+              src={face2}
               alt="img"
               className=" w-full h-[15rem] object-cover md:w-[25rem] md:h-[17] lg:ml-1 lg:w-[32rem] lg:h-[20rem] xl:w-[50rem] xl:h-[28rem]"
             />
@@ -109,14 +111,14 @@ const Acne = ({addToCart}) => {
         <SwiperSlide>
           <div className="flex flex-col items-center  md:flex md:flex-row md:justify-between md:mt-10 md:items-start  md:w-full ">
             <div className="mt-10 text-[#000]">
-              <h3 className=" md:hidden mb-2">
-                Can you use Retinol for teenage acne?
+              <h3 className=" md:hidden mb-2 capitalize">
+                The complete guide to sunscreen?
               </h3>
-              <h3 className="hidden md:block lg:block xl:hidden md:text-3xl">
-                Best Acne Product For Sensitive Skin.
+              <h3 className="hidden md:block capitalize lg:block xl:hidden md:text-3xl">
+              The complete guide to sunscreen?
               </h3>
-              <h3 className="hidden md:hidden lg:hidden xl:block  lg:text-4xl lg:mb-3  xl:text-6xl xl:mb-4">
-                Best Acne Product For Sensitive <br /> Skin.
+              <h3 className="hidden md:hidden capitalize lg:hidden xl:block  lg:text-4xl lg:mb-3  xl:text-6xl xl:mb-4">
+              The complete guide to sunscreen?
               </h3>
               <p className="text-[#808080d6] md:hidden font-medium text-base mb-5">
                 Retinol skincare is a powerful tool against acne on teenage
@@ -131,7 +133,7 @@ const Acne = ({addToCart}) => {
               </button>
             </div>
             <img
-              src={skin3}
+              src={face3}
               alt="img"
               className="w-full h-[15rem] object-cover md:w-[25rem] md:h-[17] lg:ml-1 lg:w-[32rem] lg:h-[20rem] xl:w-[50rem] xl:h-[28rem]"
             />
@@ -140,14 +142,16 @@ const Acne = ({addToCart}) => {
         <SwiperSlide>
           <div className="flex flex-col items-center  md:flex md:flex-row md:justify-between md:mt-10 md:items-start  md:w-full ">
             <div className="mt-10 text-[#000]">
-              <h3 className=" md:hidden mb-2">
-                A Beginner's guide To Acne Drying Lotions.
+              <h3 className=" md:hidden capitalize mb-2">
+               The best sunscreen for dark spot & hypperpigmentation
               </h3>
               <h3 className="hidden md:block lg:block xl:hidden md:text-3xl">
+               
                 Best Acne Product For Sensitive Skin.
               </h3>
               <h3 className="hidden md:hidden lg:hidden xl:block  lg:text-4xl lg:mb-3  xl:text-6xl xl:mb-4">
-                Best Acne Product For Sensitive <br /> Skin.
+              The best sunscreen for dark <br /> spot & hypperpigmentation
+
               </h3>
               <p className="text-[#808080d6] md:hidden font-medium text-base mb-5">
                 Acne drying lotions may look like skincare miracle in a jar,but
@@ -162,7 +166,7 @@ const Acne = ({addToCart}) => {
               </button>
             </div>
             <img
-              src={skin4}
+              src={spot1}
               alt="img"
               className="w-full h-[15rem] object-cover md:w-[25rem] md:h-[17] lg:ml-1 lg:w-[32rem] lg:h-[20rem] xl:w-[50rem] xl:h-[28rem]"
             />
@@ -329,7 +333,7 @@ const Acne = ({addToCart}) => {
       <hr className="w-full mb-2 mt-16 " />
       <General />
     </div>
-  );
-};
+  )
+}
 
-export default Acne;
+export default FaceSuncreen

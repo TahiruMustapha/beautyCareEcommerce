@@ -5,16 +5,19 @@ import i5 from './cardImages/i5.webp'
 import i10 from './cardImages/i10.webp'
 
 export const CardDataInfo = [
-    {
+    {   
+        key:1,
         img: i2,
         name: 'Nuxe Men 24 Hour Protection',
         category: 'Deodorant Roll-on x2',
         prevPrice : '$20.5',
         specialPrice:'Special Price',
         currentPrice: '$15.42',
-        discount:'Add to Cart'
+        discount: "40% off",
+        button:'Add to Cart'
     },
-    {
+    {   
+        key:2,
         img: i3,
         name: 'Nuxe Men 24 Hour Protection',
         category: 'Deodorant Roll-on x2',
@@ -22,9 +25,10 @@ export const CardDataInfo = [
         specialPrice:'Special Price',
         currentPrice: '$15.42',
         discount: "40% off",
-        discount:'Add to Cart'
+        button:'Add to Cart'
     },
-    {
+    {   
+        key:3,
         img: i4,
         name: 'Nuxe Men 24 Hour Protection',
         category: 'Deodorant Roll-on x2',
@@ -32,9 +36,10 @@ export const CardDataInfo = [
         specialPrice:'Special Price',
         currentPrice: '$15.42',
         discount: "40% off",
-        discount:'Add to Cart'
+        button:'Add to Cart'
     },
-    {
+    {   
+        key:4,
         img: i5,
         name: 'Nuxe Men 24 Hour Protection',
         category: 'Deodorant Roll-on x2',
@@ -42,9 +47,10 @@ export const CardDataInfo = [
         specialPrice:'Special Price',
         currentPrice: '$15.42',
         discount: "40% off",
-        discount:'Add to Cart'
+        button:'Add to Cart'
     },
-    {
+    {   
+        key:5,
         img: i5,
         name: 'Nuxe Men 24 Hour Protection',
         category: 'Deodorant Roll-on x2',
@@ -52,9 +58,10 @@ export const CardDataInfo = [
         specialPrice:'Special Price',
         currentPrice: '$15.42',
         discount: "40% off",
-        discount:'Add to Cart'
+        button:'Add to Cart'
     },
-    {
+    {   
+        key:6,
         img: i3,
         name: 'Nuxe Men 24 Hour Protection',
         category: 'Deodorant Roll-on x2',
@@ -62,9 +69,10 @@ export const CardDataInfo = [
         specialPrice:'Special Price',
         currentPrice: '$15.42',
         discount: "40% off",
-        discount:'Add to Cart'
+        button:'Add to Cart'
     },
-    {
+    {   
+        key:7,
         img: i10,
         name: 'Nuxe Men 24 Hour Protection',
         category: 'Deodorant Roll-on x2',
@@ -72,9 +80,10 @@ export const CardDataInfo = [
         specialPrice:'Special Price',
         currentPrice: '$15.42',
         discount: "40% off",
-        discount:'Add to Cart'
+        button:'Add to Cart'
     },
-    {
+    {   
+        key:8,
         img: i5,
         name: 'Nuxe Men 24 Hour Protection',
         category: 'Deodorant Roll-on x2',
@@ -82,6 +91,6 @@ export const CardDataInfo = [
         specialPrice:'Special Price',
         currentPrice: '$15.42',
         discount: "40% off",
-        discount:'Add to Cart'
+        button:'Add to Cart'
     },
 ] 
