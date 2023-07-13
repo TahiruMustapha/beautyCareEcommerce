@@ -116,7 +116,9 @@ const Cart = ({
               </button>
               </div>
             </div>
+           
           ))}
+       
           {products.length > 0 && (
             <button className="btn check-btn text-[1rem] py-5 px-20
              text-[#fff] self-center mt-4 mx-0 bg-[#065a82]">

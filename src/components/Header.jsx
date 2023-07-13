@@ -549,7 +549,7 @@ const Header = ({
           </Dropdown>
         </div>
         {/* cart details */}
-        <div className=  "cartInfo mt-[-1.6rem]  ">
+        <div className=  "cartInfo mt-[-1.6rem] md:hidden">
                   <div
                     className= "modal  mt-0 ml-auto mr-auto left-0 right-0 bottom-0 w-[95%] h-fit bg-[#00000055] z-[9999]" 
                     style={{
@@ -567,7 +567,7 @@ const Header = ({
                           <AiFillCloseCircle size={20} />
                         </button>
                       </div>
-                      <div className="  cart-products flex flex-col items-start py-[1rem] overflow-y-scroll px-0">
+                      <div className="  cart-products  flex flex-col items-start py-[1rem] overflow-y-scroll px-0">
                         {products === 0 && (
                           <span className=" empty-text block text-center text-base  p-[1rem] m-auto">
                             Your Cart is currently empty
@@ -575,7 +575,7 @@ const Header = ({
                         )}
                         {products.map((product) => (
                           <div
-                            className="cart-product  flex flex-row justify-between items-center w-full bg-white py-1 px-1 border "
+                            className="cart-product   flex flex-row justify-between items-center w-full bg-white py-1 px-1 border "
                             id={product.key}
                           >
                             <img
@@ -618,22 +618,26 @@ const Header = ({
                               {" "}
                               <RiDeleteBin6Line size={15} />
                             </button>
+                            
                           </div>
+
                         ))}
+                         <p className="text-base font-semibold mt-2">Grand Total: $557.98</p>
                         {products.length > 0 && (
                           <button 
                           onClick={() => openCartV(false)}
-                            className="btn check-btn text-[.6rem] py-1 px-5
+                            className="btn check-btn text-[1rem] py-1 px-5
              text-[#fff] self-center my-[.7rem] mx-0 bg-[#065a82] hover:bg-[#065b82b8]"
                           >
                             <Link
                               to={"cart"}
                               className="text-white   py-1 px-5 no-underline hover:text-white hover:no-underline"
                             >
-                              Go To Cart
+                              View More
                             </Link>
                           </button>
                         )}
+                       
                       </div>
                     </div>
                   </div>
