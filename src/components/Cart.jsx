@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { useState } from "react";
 //import { AiFillCloseCircle } from "react-icons/ai";
 import { RiDeleteBin6Line } from "react-icons/ri";
 const Cart = ({
@@ -9,6 +10,10 @@ const Cart = ({
   onQuantityChange,
   openCartV,
 }) => {
+  const [total,setTotal] = useState();
+  useEffect( ()=>{
+      setTotal(products.reduce((acc,curr)=> acc + Number(curr.price), 0))
+  },[products])
   return (
     <div
       className="modal w-[95%] m-auto h-fit bg-[#00000055] z-[9999]"
@@ -24,7 +29,7 @@ const Cart = ({
           </button> */}
         </div>
         <div className="cart-products flex flex-col items-start py-[1rem] overflow-y-scroll px-0">
-          {products === 0 && (
+          {products.length === 0 && (
             <span className="empty-text block text-center text-base  p-[2rem] m-auto">
               Your Cart is currently empty
             </span>
@@ -64,8 +69,9 @@ const Cart = ({
               </div> */}
               <div className=" text-center product-info basis-[50%]">
                 <h3 className="font-[600] text-[1rem]">{product.name}</h3>
-
-                <span className="product-price text-base">${product.price * product.count}</span>
+                  
+                <span className="product-price text-base">${product.price * product.count}
+              </span>
               </div>
               <select 
                 className=" hidden count w-[70px] text-[1rem] outline-none"
@@ -118,10 +124,10 @@ const Cart = ({
             </div>
            
           ))}
-                         <p className="text-base font-semibold mt-2">Grand Total: $557.98</p>
+          <p className="text-base font-semibold mt-2">Grand Total ( <span>{products.length}</span> items ): {Number(total).toFixed(2)} </p>
        
           {products.length > 0 && (
-            <button className="btn check-btn text-[1rem] py-5 px-20
+            <button disabled = {products.length === 0} className="btn check-btn text-[1rem] py-5 px-20
              text-[#fff] self-center mt-4 mx-0 bg-[#065a82]">
               Proceed To Checkout
             </button>

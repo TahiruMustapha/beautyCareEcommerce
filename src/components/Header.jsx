@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState,useEffect } from "react";
 import bLogo from "../assets/bLogo.webp";
 import { Link } from "react-router-dom";
 import { HiOutlineUserCircle } from "react-icons/hi";
@@ -30,6 +30,10 @@ const Header = ({
   const [showMenu, setShowMenu] = useState(false);
   const [showNav, setShowNav] = useState(false);
   // onClosed={() => setCartVisibility(false)}
+  const [total,setTotal] = useState();
+  useEffect( ()=>{
+    setTotal(products.reduce((acc,curr)=> acc + Number(curr.price), 0))
+},[products])
   const handleShowmenu = () => {
     setShowMenu((prev) => !prev);
   };
@@ -117,7 +121,7 @@ const Header = ({
                         </button>
                       </div>
                       <div className="  cart-products flex flex-col items-start py-[1rem] overflow-y-scroll px-0">
-                        {products === 0 && (
+                        {products.length === 0 && (
                           <span className=" empty-text block text-center text-base  p-[1rem] m-auto">
                             Your Cart is currently empty
                           </span>
@@ -169,7 +173,7 @@ const Header = ({
                             </button>
                           </div>
                         ))}
-                         <p className="text-base font-semibold mt-2">Grand Total: $557.98</p>
+                         <p className="text-base font-semibold mt-2 ml-1">Grand Total( <span>{products.length}</span> items ): {Number(total).toFixed(2)}</p>
 
                         {products.length > 0 && (
                           <button 
@@ -570,7 +574,7 @@ const Header = ({
                         </button>
                       </div>
                       <div className="  cart-products  flex flex-col items-start py-[1rem] overflow-y-scroll px-0">
-                        {products === 0 && (
+                        {products.length === 0 && (
                           <span className=" empty-text block text-center text-base  p-[1rem] m-auto">
                             Your Cart is currently empty
                           </span>
@@ -592,6 +596,7 @@ const Header = ({
 
                               <span className="product-price">
                                 ${product.price * product.count}
+                                {/* ${product.price * product.count.split('.')[0]} */}
                               </span>
                             </div>
                             <select
@@ -624,7 +629,7 @@ const Header = ({
                           </div>
 
                         ))}
-                         <p className="text-base font-semibold mt-2">Grand Total: $557.98</p>
+                         <p className="text-base font-semibold mt-2">( <span>{products.length}</span> items ): {Number(total).toFixed(2)}</p>
                         {products.length > 0 && (
                           <button 
                           onClick={() => openCartV(false)}
