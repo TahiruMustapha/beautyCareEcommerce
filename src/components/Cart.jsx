@@ -1,5 +1,5 @@
 import React from "react";
-import { AiFillCloseCircle } from "react-icons/ai";
+//import { AiFillCloseCircle } from "react-icons/ai";
 import { RiDeleteBin6Line } from "react-icons/ri";
 const Cart = ({
   visibility,
