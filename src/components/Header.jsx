@@ -257,95 +257,7 @@ const Header = ({
             className="  text-base  cursor-pointer  h-10 "
           />
           
-          <div className="cartInfo">
-                  <div
-                    className= "modal  mt-[25rem] ml-auto mr-auto left-0 right-0 bottom-0 w-full h-fit bg-[#00000055] z-[9999]" 
-                    style={{
-                      display: openCart ? "block" : "none",
-                    }}
-                  >
-                    <div className="shoppingCart w-full h-full my-[2rem] mx-auto bg-[#eee] p-1 flex flex-col relative">
-                      <div className="header flex bg-[#ccc] py-1 px-1 justify-between">
-                        <h3 className="text-sm">Shopping Cart</h3>
-                        <button
-                        
-                          className="btn close-btn text-[#065a82]"
-                          onClick={closeCart}
-                        >
-                          <AiFillCloseCircle size={20} />
-                        </button>
-                      </div>
-                      <div className="  cart-products flex flex-col items-start py-[1rem] overflow-y-scroll px-0">
-                        {products === 0 && (
-                          <span className=" empty-text block text-center text-base  p-[1rem] m-auto">
-                            Your Cart is currently empty
-                          </span>
-                        )}
-                        {products.map((product) => (
-                          <div
-                            className="cart-product  flex flex-row justify-between items-center w-full bg-white py-1 px-1 border "
-                            id={product.key}
-                          >
-                            <img
-                              src={product.image}
-                              alt={product.name}
-                              className="w-[3rem]"
-                            />
-                            <div className="product-info  ">
-                              <h3 className="font-[600] text-sm">
-                                {product.name}
-                              </h3>
-
-                              <span className="product-price">
-                                ${product.price * product.count}
-                              </span>
-                            </div>
-                            <select
-                              className="count w-[70px] text-base outline-none"
-                              value={product.count}
-                              onChange={(event) => {
-                                onQuantityChange(
-                                  product.id,
-                                  event.target.value
-                                );
-                              }}
-                            >
-                              {[...Array(10).keys()].map((number) => {
-                                const num = number + 1;
-                                return (
-                                  <option value={num} key={num}>
-                                    {num}
-                                  </option>
-                                );
-                              })}
-                            </select>
-                            <button
-                              className="btn remove-btn"
-                              onClick={() => onProductRemove(product)}
-                            >
-                              {" "}
-                              <RiDeleteBin6Line size={15} />
-                            </button>
-                          </div>
-                        ))}
-                        {products.length > 0 && (
-                          <button 
-                          onClick={() => openCartV(false)}
-                            className="btn check-btn text-[.6rem] py-1 px-5
-             text-[#fff] self-center my-[.7rem] mx-0 bg-[#065a82] hover:bg-[#065b82b8]"
-                          >
-                            <Link
-                              to={"cart"}
-                              className="text-white   py-1 px-5 no-underline hover:text-white hover:no-underline"
-                            >
-                              Go To Cart
-                            </Link>
-                          </button>
-                        )}
-                      </div>
-                    </div>
-                  </div>
-                </div>
+          
                 
           <BsCartFill  onClick={() => openCartV(true)} className=" text-base cursor-pointer" />
           {productInCart.length > 0 && (
@@ -636,6 +548,96 @@ const Header = ({
             </Dropdown.Item>
           </Dropdown>
         </div>
+        {/* cart details */}
+        <div className=  "cartInfo mt-0">
+                  <div
+                    className= "modal  mt-[0rem] ml-auto mr-auto left-0 right-0 bottom-0 w-full h-fit bg-[#00000055] z-[9999]" 
+                    style={{
+                      display: openCart ? "block" : "none",
+                    }}
+                  >
+                    <div className="shoppingCart w-full h-full my-[2rem] mx-auto bg-[#eee] p-1 flex flex-col relative">
+                      <div className="header flex bg-[#ccc] py-1 px-1 justify-between">
+                        <h3 className="text-sm">Shopping Cart</h3>
+                        <button
+                        
+                          className="btn close-btn text-[#065a82]"
+                          onClick={closeCart}
+                        >
+                          <AiFillCloseCircle size={20} />
+                        </button>
+                      </div>
+                      <div className="  cart-products flex flex-col items-start py-[1rem] overflow-y-scroll px-0">
+                        {products === 0 && (
+                          <span className=" empty-text block text-center text-base  p-[1rem] m-auto">
+                            Your Cart is currently empty
+                          </span>
+                        )}
+                        {products.map((product) => (
+                          <div
+                            className="cart-product  flex flex-row justify-between items-center w-full bg-white py-1 px-1 border "
+                            id={product.key}
+                          >
+                            <img
+                              src={product.image}
+                              alt={product.name}
+                              className="w-[3rem]"
+                            />
+                            <div className="product-info  ">
+                              <h3 className="font-[600] text-sm">
+                                {product.name}
+                              </h3>
+
+                              <span className="product-price">
+                                ${product.price * product.count}
+                              </span>
+                            </div>
+                            <select
+                              className="count w-[70px] text-base outline-none"
+                              value={product.count}
+                              onChange={(event) => {
+                                onQuantityChange(
+                                  product.id,
+                                  event.target.value
+                                );
+                              }}
+                            >
+                              {[...Array(10).keys()].map((number) => {
+                                const num = number + 1;
+                                return (
+                                  <option value={num} key={num}>
+                                    {num}
+                                  </option>
+                                );
+                              })}
+                            </select>
+                            <button
+                              className="btn remove-btn"
+                              onClick={() => onProductRemove(product)}
+                            >
+                              {" "}
+                              <RiDeleteBin6Line size={15} />
+                            </button>
+                          </div>
+                        ))}
+                        {products.length > 0 && (
+                          <button 
+                          onClick={() => openCartV(false)}
+                            className="btn check-btn text-[.6rem] py-1 px-5
+             text-[#fff] self-center my-[.7rem] mx-0 bg-[#065a82] hover:bg-[#065b82b8]"
+                          >
+                            <Link
+                              to={"cart"}
+                              className="text-white   py-1 px-5 no-underline hover:text-white hover:no-underline"
+                            >
+                              Go To Cart
+                            </Link>
+                          </button>
+                        )}
+                      </div>
+                    </div>
+                  </div>
+                </div>
         <div
           className={
             openNav
