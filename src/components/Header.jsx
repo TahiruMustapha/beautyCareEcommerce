@@ -629,7 +629,7 @@ const Header = ({
                           </div>
 
                         ))}
-                         <p className="text-base font-semibold mt-2">( <span>{products.length}</span> items ): {Number(total).toFixed(2)}</p>
+                         <p className="text-base font-semibold mt-2">Grand Total ( <span>{products.length}</span> items ): {Number(total).toFixed(2)}</p>
                         {products.length > 0 && (
                           <button 
                           onClick={() => openCartV(false)}
@@ -644,7 +644,7 @@ const Header = ({
                             </Link>
                           </button>
                         )}
-                       
+                     
                       </div>
                     </div>
                   </div>
