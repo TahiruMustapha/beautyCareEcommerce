@@ -34,6 +34,10 @@ const Header = ({
     setShowMenu((prev) => !prev);
   };
   const [openNav, setOpenNav] = useState(false);
+  const [openCartBox, setOpenCartBox] = useState(false);
+  const handleCartBox = ()=>{
+    setOpenCartBox((prev) => !prev);
+  }
   const handleOpenNav = () => {
     setOpenNav((prev) => !prev);
   };
@@ -252,9 +256,10 @@ const Header = ({
             onClick={handleOpenNav}
             className="  text-base  cursor-pointer  h-10 "
           />
+          
           <div className="cartInfo">
                   <div
-                    className="modal  mt-[30rem] ml-auto mr-auto left-0 right-0 bottom-0 w-full h-fit bg-[#00000055] z-[9999]"
+                    className= "modal  mt-[25rem] ml-auto mr-auto left-0 right-0 bottom-0 w-full h-fit bg-[#00000055] z-[9999]" 
                     style={{
                       display: openCart ? "block" : "none",
                     }}
@@ -341,7 +346,7 @@ const Header = ({
                     </div>
                   </div>
                 </div>
-
+                
           <BsCartFill  onClick={() => openCartV(true)} className=" text-base cursor-pointer" />
           {productInCart.length > 0 && (
                     <div className=" absolute bg-[orangered] w-3 h-3 rounded-full text-xs flex items-center text-white justify-center font-bold top-2 right-[11.8rem] m-0">
