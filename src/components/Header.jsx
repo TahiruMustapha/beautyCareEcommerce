@@ -261,7 +261,7 @@ const Header = ({
                 
           <BsCartFill  onClick={() => openCartV(true)} className=" text-base cursor-pointer" />
           {productInCart.length > 0 && (
-                    <div className=" absolute bg-[orangered] w-3 h-3 rounded-full text-xs flex items-center text-white justify-center font-bold top-2 right-[11.8rem] m-0">
+                    <div className=" absolute bg-[orangered] w-3 h-3 rounded-full text-xs flex items-center text-white justify-center font-bold top-1.5 right-[13.5rem] m-0">
                       {productInCart.length}
                     </div>
                   )}
