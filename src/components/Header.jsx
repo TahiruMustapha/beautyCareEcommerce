@@ -549,7 +549,7 @@ const Header = ({
           </Dropdown>
         </div>
         {/* cart details */}
-        <div className=  "cartInfo mt-0">
+        <div className=  "cartInfo mt-[-1.6rem]  ">
                   <div
                     className= "modal  mt-0 ml-auto mr-auto left-0 right-0 bottom-0 w-[95%] h-fit bg-[#00000055] z-[9999]" 
                     style={{
