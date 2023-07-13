@@ -254,7 +254,7 @@ const Header = ({
           />
           <div className="cartInfo">
                   <div
-                    className="modal  mt-[50rem] ml-auto mr-auto left-0 right-0 bottom-0 w-[100%] h-fit bg-[#00000055] z-[9999]"
+                    className="modal  mt-[30rem] ml-auto mr-auto left-0 right-0 bottom-0 w-full h-fit bg-[#00000055] z-[9999]"
                     style={{
                       display: openCart ? "block" : "none",
                     }}
