@@ -169,6 +169,8 @@ const Header = ({
                             </button>
                           </div>
                         ))}
+                         <p className="text-base font-semibold mt-2">Grand Total: $557.98</p>
+
                         {products.length > 0 && (
                           <button 
                           onClick={() => openCartV(false)}
@@ -179,7 +181,7 @@ const Header = ({
                               to={"cart"}
                               className="text-white  py-2 px-10 no-underline hover:text-white hover:no-underline"
                             >
-                              Go To Cart
+                              View More
                             </Link>
                           </button>
                         )}

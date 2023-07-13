@@ -118,6 +118,7 @@ const Cart = ({
             </div>
            
           ))}
+                         <p className="text-base font-semibold mt-2">Grand Total: $557.98</p>
        
           {products.length > 0 && (
             <button className="btn check-btn text-[1rem] py-5 px-20
