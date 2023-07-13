@@ -34,10 +34,10 @@ const Header = ({
     setShowMenu((prev) => !prev);
   };
   const [openNav, setOpenNav] = useState(false);
-  const [openCartBox, setOpenCartBox] = useState(false);
-  const handleCartBox = ()=>{
-    setOpenCartBox((prev) => !prev);
-  }
+  // const [openCartBox, setOpenCartBox] = useState(false);
+  // const handleCartBox = ()=>{
+  //   setOpenCartBox((prev) => !prev);
+  // }
   const handleOpenNav = () => {
     setOpenNav((prev) => !prev);
   };
