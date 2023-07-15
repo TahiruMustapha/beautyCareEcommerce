@@ -49,7 +49,7 @@ const Checkout = ({
               <input type="text" className='border-2 w-full py-3 px-3 outline-none mt-3 focus:outline-none' name='companyName' />
             </p>
             <p className='mt-10'>
-            <label for="countries" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Country/ Region*</label>
+            <label for="countries" class=" mb-2 text-sm font-medium  ">Country / Region*</label>
             <select id="countries" class=" border-2 outline-none mt-2  focus:outline-none   w-full py-3 px-3 ">
               <option selected></option>
               <option value="US">United States</option>
