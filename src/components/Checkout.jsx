@@ -5,6 +5,8 @@ import { Link } from 'react-router-dom';
 import pay from './homeSliderImgs/pay.png'
 import int from './homeSliderImgs/int.png'
 import cripto from './homeSliderImgs/cripto.png'
+import paypal from './homeSliderImgs/paypal.svg'
+import payLater from './homeSliderImgs/payLater.svg'
 
 const Checkout = ({
   products,
@@ -31,7 +33,18 @@ const Checkout = ({
          <p className='text-base mt-10'>Returning Customer? <Link className='text-[#a2b450]'>Click Here To Login.</Link></p>
          <p className='text-base'>Have a Coupon? <Link className='text-[#a2b450]'>Click Here To Enter Your Code.</Link></p>
        
-        <div className="checkoutInfo  flex flex-col  md:flex md:flex-row items-start md:w-full mt-14 mb-14">
+       <div className="instantCheckout  mb-0  mt-5  flex flex-col text-center item-center justify-center w-full ml-0 mr-0">
+              <p className=' text-sm md:text-lg'><strong>Buy now</strong> with instant checkout</p>
+              <p >
+                <p className='flex flex-col md:flex-row justify-center items-center  w-full'>
+               <p className='bg-[#ffc439] py-1 w-full flex items-start justify-center px-20 rounded-lg md:py-2'> <Link to={'https://www.paypal.com/an/home'}><img src={paypal} alt="paypal" className='w-[4rem] ' /></Link> </p> 
+               <p  className='hidden  text-base font-semibold md:flex items-center bg-[#ffc439] px-20 mt-0 rounded-lg py-2 ml-2'><img src={payLater} alt="payLater" /> PayLater</p> 
+                </p>
+                
+                <p className='text-sm md:text-lg'><strong>or</strong> proceed with regular checkout</p>
+              </p>
+       </div>
+        <div className="checkoutInfo  flex flex-col  md:flex md:flex-row items-start md:w-full mt-4 mb-14">
           <div className='formInfo w-full md:w-[60%] '>
             <p className=' flex flex-col w-full md:flex md:flex-row md:items-center md:justify-between'>
               <span className=' md:mr-2'>
