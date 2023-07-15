@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import { useState } from "react";
 //import { AiFillCloseCircle } from "react-icons/ai";
 import { RiDeleteBin6Line } from "react-icons/ri";
+import { Link } from "react-router-dom";
 const Cart = ({
   visibility,
   products,
@@ -129,7 +130,8 @@ const Cart = ({
           {products.length > 0 && (
             <button disabled = {products.length === 0} className="btn check-btn text-[1rem] py-5 px-20
              text-[#fff] self-center mt-4 mx-0 bg-[#065a82]">
-              Proceed To Checkout
+             <Link className="text-white hover:text-white hover:no-underline" to={'checkout'}> Proceed To Checkout</Link>
+              
             </button>
           )}
         </div>

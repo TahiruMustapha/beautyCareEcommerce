@@ -176,18 +176,33 @@ const Header = ({
                          <p className="text-base font-semibold mt-2 ml-1">Grand Total( <span>{products.length}</span> items ): ${Number(total).toFixed(2)}</p>
 
                         {products.length > 0 && (
-                          <button 
+                          <div>
+                            <button 
                           onClick={() => openCartV(false)}
-                            className="btn check-btn text-[1rem] py-2 px-10
-             text-[#fff] self-center my-[1rem] mx-0 bg-[#065a82] hover:bg-[#065b82b8]"
+                            className="btn check-btn mt-4 text-[1rem] py-2 px-10 w-full"
+             
                           >
                             <Link
                               to={"cart"}
-                              className="text-white  py-2 px-10 no-underline hover:text-white hover:no-underline"
+                              className=" text-[black] font-semibold py-2 px-10 no-underline hover:text-[gray] hover:no-underline"
                             >
                               View More
                             </Link>
                           </button>
+                          <button   onClick={() => openCartV(false)} className="text-[1rem] w-full py-2 px-10
+                          my-[.3rem] mx-0 bg-[#065a82] hover:bg-[#065b82b8]
+                          ">
+                          <Link
+                              to={"/cart/checkout"}
+                              className="text-white  py-2 px-10 no-underline hover:text-white hover:no-underline"
+                            >
+                              Procede To Checkout
+                            </Link>
+                          </button>
+                          </div>
+                          
+                          
+                         
                         )}
                       </div>
                     </div>
@@ -631,18 +646,30 @@ const Header = ({
                         ))}
                          <p className="text-base font-semibold mt-2">Grand Total ( <span>{products.length}</span> items ): ${Number(total).toFixed(2)}</p>
                         {products.length > 0 && (
-                          <button 
+                          <div>
+                             <button 
                           onClick={() => openCartV(false)}
                             className="btn check-btn text-[1rem] py-1 px-5
-             text-[#fff] self-center my-[.7rem] mx-0 bg-[#065a82] hover:bg-[#065b82b8]"
+             mt-4 self-center w-full "
                           >
                             <Link
                               to={"cart"}
-                              className="text-white   py-1 px-5 no-underline hover:text-white hover:no-underline"
+                              className="text-[black] font-semibold   py-1 px-5 no-underline hover:text-[gray] hover:no-underline"
                             >
                               View More
                             </Link>
                           </button>
+                          <button   onClick={() => openCartV(false)} className="w-full  mx-0 text-[1rem] py-1 px-5 bg-[#065a82] hover:bg-[#065b82b8]">
+                          <Link
+                              to={"/cart/checkout"}
+                              className="text-white   py-1 px-5 no-underline hover:text-white hover:no-underline"
+                            >
+                              Procede To Payment
+                            </Link>
+                          </button>
+
+                          </div>
+                         
                         )}
                      
                       </div>

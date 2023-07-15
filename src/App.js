@@ -12,6 +12,7 @@ import Darkspot from "./select/Darkspot";
 import FaceSuncreen from "./select/FaceSuncreen";
 import { useState, useEffect } from "react";
 import Cart from "./components/Cart";
+import Checkout from "./components/Checkout";
 function App() {
   const [cartVisibility, setCartVisibility] = useState(false);
   const [openCart, setOpenCart] = useState(false);
@@ -108,7 +109,13 @@ function App() {
           exact
           element={<FaceSuncreen addToCart={addProductToCart} />}
         />
+        <Route
+          path="/cart/checkout"
+          exact
+          element={<Checkout   products={productInCart}/>}
+        />
       </Routes>
+      
       <Footer />
     </div>
   );
